@@ -18,7 +18,7 @@ print(g2)
 
 ggsave('g2.jpg',
        g2,
-       path = 'C:/Users/G00399072/OneDrive - Atlantic TU/Desktop/nocmig/graphs',
+       path = './Files/graphs',
        width = 300,
        height = 180,
        units = 'mm',
@@ -47,7 +47,7 @@ print(g4)
 
 ggsave('g4.jpg',
        g4,
-       path = 'C:/Users/G00399072/OneDrive - Atlantic TU/Desktop/nocmig/graphs',
+       path = './Files/graphs',
        width = 300,
        height = 180,
        units = 'mm',

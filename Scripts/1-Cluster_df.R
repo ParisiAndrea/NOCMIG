@@ -4,11 +4,11 @@ sapply(c('data.table', 'dplyr', 'tidyr','viridis',
        character.only=T)
 
 
-setwd('C:/Users/G00399072/OneDrive - Atlantic TU/Desktop/nocmig')
+setwd('C:/Users/G00399072/OneDrive - Atlantic TU/Documents/NOCMIG')
 
 ###1
 
-d = fread('./2-rescan/cluster.csv') %>%
+d = fread('./Files/2-rescan/cluster.csv') %>%
   dplyr::select(FOLDER,`IN FILE`,DATE,`TIME`,`TOP1MATCH*`,TOP1DIST,DURATION,Fmin,Fmean,Fmax,`MANUAL ID`) %>%
   rename(FILE = `IN FILE`,
          MATCH = `TOP1MATCH*`,
