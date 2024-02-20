@@ -14,7 +14,6 @@ d = fread('./2-rescan/cluster.csv') %>%
          MATCH = `TOP1MATCH*`,
          DIST = TOP1DIST,
          CLASS = `MANUAL ID`)
-
 head(d)
 
 #filter noise out
@@ -50,5 +49,9 @@ z = mutate(z,
 
 #delete datetime
 z = z[,-c('nightEnd','night','datetime')]
-
 head(z)
+
+#keep night detections only
+n = z[period == 'night']
+head(n)
+#END

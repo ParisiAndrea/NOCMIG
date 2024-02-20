@@ -1,4 +1,5 @@
-g1 = ggplot(ex) +
+#TILE 1
+g1 = ggplot(l) +
   geom_tile(aes(bins, as.Date(DATE)+.5, fill = ssize),
             #color = "white",
             lwd = 1,
@@ -29,7 +30,7 @@ ggsave('g1.jpg',
        dpi = 600
 )
 
-
+#TILE 2
 g3 = ggplot(t) +
   geom_tile(aes(bins, as.Date(DATE)+0.5, fill = ssize),
             #color = "white",
@@ -50,6 +51,8 @@ g3 = ggplot(t) +
         panel.grid = element_blank(),
         legend.position = 'top',
         axis.text.x = element_text(angle = 90))
+
+print(g3)
 
 ggsave('g3.jpg',
        g3,

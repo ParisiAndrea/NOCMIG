@@ -1,4 +1,5 @@
-g2 = ggplot(ex) +
+#HIST 1
+g2 = ggplot(l) +
   geom_bar(aes(bins),
            color = "#F5EDE6",
            lwd = .5,
@@ -24,6 +25,7 @@ ggsave('g2.jpg',
        dpi = 600
 )
 
+#HIST 2
 g4 = ggplot(t) +
   geom_bar(aes(DATE+.5),
            color = "#F5EDE6",
